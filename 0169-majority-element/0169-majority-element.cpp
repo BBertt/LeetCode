@@ -1,13 +1,13 @@
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
-        int value = 0;
+        double value = 0;
         int key;
         map <int, int> maps;
 
         for (auto& num : nums) {
             maps[num]++;
-            if (maps[num]/2 > value) {
+            if (maps[num] > nums.size()/2) {
                 value = maps[num];
                 key = num;
             }
