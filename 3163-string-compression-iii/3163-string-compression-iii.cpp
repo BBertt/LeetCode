@@ -33,7 +33,7 @@ public:
                     c = '\0';
                 }
             }
-            if (i == word.length()-1) {
+            if (c != '\0' && i == word.length()-1) {
                 comp += to_string(z);
                 comp += c;
             }
