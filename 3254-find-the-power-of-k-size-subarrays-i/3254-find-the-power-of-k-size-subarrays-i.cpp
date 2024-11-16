@@ -26,6 +26,7 @@ public:
                 c = 0;
                 isAsc = true;
                 z++;
+                if (z + k > nums.size()) break;
                 i = z-1;
                 temp.clear();
             }
